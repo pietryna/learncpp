@@ -1,12 +1,17 @@
 #include <iostream>
 
+#include "src/blackjack.h"
+
 using std::cout;
 using std::cin;
 using std::endl;
 
 int main()
 {
-   cout << "Hello world!" << endl;
+   cout << "learncpp.com main" << endl;
+   int returnVal = 0;
 
-   return 0;
+   returnVal = main_blackjack();
+
+   return returnVal;
 }
