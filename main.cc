@@ -1,8 +1,12 @@
 #include <iostream>
 
+using std::cout;
+using std::cin;
+using std::endl;
+
 int main()
 {
-   std::cout << "Hello world!";
+   cout << "Hello world!" << endl;
 
    return 0;
 }

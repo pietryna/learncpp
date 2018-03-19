@@ -1,1 +1,6 @@
 /Debug/
+/Release/
+/.settings/
+/.cproject
+/.project
+/learncpp.build.log
