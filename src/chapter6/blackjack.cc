@@ -61,8 +61,8 @@ void initDeck(Deck &deck)
    for (int rank = Rank_2; rank < Rank_NumOfRanks; ++rank)
       for (int suit = Clubs; suit < NumOfSuits; ++suit)
       {
-         DeckOfCards[card].rank = static_cast<CardRanks>(rank);
-         DeckOfCards[card].suit = static_cast<CardSuits>(suit);
+         deck[card].rank = static_cast<CardRanks>(rank);
+         deck[card].suit = static_cast<CardSuits>(suit);
          ++card;
       }
 }
@@ -294,7 +294,8 @@ int main_blackjack()
 {
    std::cout << std::endl << "-------------------------------" << std::endl
          << "main blackjack" << std::endl;
-   srand(time(0));
+
+   srand(static_cast<unsigned int>(time(0)));
    rand();
 
    deck::initDeck(deck::DeckOfCards);

@@ -45,7 +45,7 @@ int main_recursion()
    std::cout << std::endl << "-------------------------------" << std::endl
             << "main recursion" << std::endl;
 
-   srand(time(0));
+   srand(static_cast<unsigned int>(time(0)));
    rand();
 
    cout << "Recursion" << endl;
