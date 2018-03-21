@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "src/blackjack.h"
+#include "src/chapter6/blackjack.h"
+#include "src/chapter7/prototypes.h"
 
 using std::cout;
 using std::cin;
@@ -11,7 +12,8 @@ int main()
    cout << "learncpp.com main" << endl;
    int returnVal = 0;
 
-   returnVal = main_blackjack();
+   //returnVal = main_blackjack();
+   //returnVal = main_prototypes();
 
    return returnVal;
 }
