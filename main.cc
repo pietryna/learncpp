@@ -2,6 +2,7 @@
 
 #include "src/chapter6/blackjack.h"
 #include "src/chapter7/prototypes.h"
+#include "src/chapter7/calculator.h"
 
 using std::cout;
 using std::cin;
@@ -14,6 +15,7 @@ int main()
 
    //returnVal = main_blackjack();
    //returnVal = main_prototypes();
+   returnVal = main_calculator();
 
    return returnVal;
 }
