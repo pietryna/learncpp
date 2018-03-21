@@ -4,6 +4,7 @@
 #include "src/chapter7/prototypes.h"
 #include "src/chapter7/calculator.h"
 #include "src/chapter7/recursion.h"
+#include "src/chapter7/summary.h"
 
 using std::cout;
 using std::cin;
@@ -17,7 +18,8 @@ int main()
    //returnVal = main_blackjack();
    //returnVal = main_prototypes();
    //returnVal = main_calculator();
-   returnVal = main_recursion();
+   //returnVal = main_recursion();
+   returnVal = main_summary();
 
    return returnVal;
 }
