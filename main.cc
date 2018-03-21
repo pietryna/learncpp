@@ -3,6 +3,7 @@
 #include "src/chapter6/blackjack.h"
 #include "src/chapter7/prototypes.h"
 #include "src/chapter7/calculator.h"
+#include "src/chapter7/recursion.h"
 
 using std::cout;
 using std::cin;
@@ -15,7 +16,8 @@ int main()
 
    //returnVal = main_blackjack();
    //returnVal = main_prototypes();
-   returnVal = main_calculator();
+   //returnVal = main_calculator();
+   returnVal = main_recursion();
 
    return returnVal;
 }

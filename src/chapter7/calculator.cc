@@ -95,7 +95,7 @@ arithmeticFcn getArithmeticFunction(char op)
 int main_calculator()
 {
    std::cout << std::endl << "-------------------------------" << std::endl
-         << "main prototypes" << std::endl;
+         << "main calculator" << std::endl;
 
    cout << "Calculator 0.00001" << endl;
    int A = getInt();
