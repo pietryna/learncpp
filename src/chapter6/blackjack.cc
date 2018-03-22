@@ -7,7 +7,9 @@
 
 #include <ctime>
 #include <cstdlib>
+#include <cstring>
 
+#include "../startStop.h"
 #include "blackjack.h"
 
 using std::cout;
@@ -290,10 +292,10 @@ bool playBlackjack(deck::Deck &deck)
 
 }
 
+
 int main_blackjack()
 {
-   std::cout << std::endl << "-------------------------------" << std::endl
-         << "main blackjack" << std::endl;
+   printStartBar(__FILE__);
 
    srand(static_cast<unsigned int>(time(0)));
    rand();
@@ -302,10 +304,10 @@ int main_blackjack()
    deck::shuffleDeck(deck::DeckOfCards);
 
    if ( true == game::playBlackjack(deck::DeckOfCards))
-      cout << "You win!";
+      cout << "You win!" << endl;
    else
-      cout << "You lose!";
+      cout << "You lose!" << endl;
 
-   std::cout << "-------------------------------";
+   printStopBar(__FILE__);
    return 0;
 }

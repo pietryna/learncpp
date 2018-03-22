@@ -1,5 +1,8 @@
 #include <iostream>
 
+#include <cstring>
+
+#include "../startStop.h"
 #include "calculator.h"
 
 using std::cout;
@@ -94,8 +97,7 @@ arithmeticFcn getArithmeticFunction(char op)
 
 int main_calculator()
 {
-   std::cout << std::endl << "-------------------------------" << std::endl
-         << "main calculator" << std::endl;
+   printStartBar(__FILE__);
 
    cout << "Calculator 0.00001" << endl;
    int A = getInt();
@@ -104,6 +106,6 @@ int main_calculator()
 
    cout << "Result: " << getArithmeticFunction(op)(A,B) << endl;
 
-   std::cout << "-------------------------------";
+   printStopBar(__FILE__);
    return 0;
 }

@@ -4,6 +4,9 @@
 #include <assert.h>
 #include <limits.h>
 
+#include "../startStop.h"
+#include <cstring>
+
 using std::cout;
 using std::cin;
 using std::endl;
@@ -79,11 +82,10 @@ int binarySearchRecursive(int *array, int target, int min, int max)
       return midpoint;
 }
 
+
 int main_summary()
 {
-
-   std::cout << std::endl << "-------------------------------" << std::endl
-         << "Chapter 7 summary" << endl;
+   printStartBar(__FILE__);
 
    {
       cout << "Tab printing" << endl;
@@ -165,6 +167,6 @@ int main_summary()
       cout << "---------------------" << endl;
    }
 
-   std::cout << "-------------------------------";
+   printStopBar(__FILE__);
    return 0;
 }

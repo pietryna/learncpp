@@ -1,6 +1,9 @@
 #include <iostream>
 #include <limits.h>
 
+#include <cstring>
+
+#include "../startStop.h"
 #include "prototypes.h"
 
 int sumTo(const int lim)
@@ -58,10 +61,10 @@ const int &getElement(const int tab[], const int index)
    return static_cast<const int&>(tab[index]);
 }
 
+
 int main_prototypes()
 {
-   std::cout << std::endl << "-------------------------------" << std::endl
-         << "main prototypes" << std::endl;
+   printStartBar(__FILE__);
 
    std::cout << "Sum from 1 to 5: " << sumTo(5) << std::endl;
 
@@ -83,6 +86,6 @@ int main_prototypes()
          << getElement(tab, getIndexOfLargest(tab, sizeof(tab) / sizeof(int)))
          << std::endl;
 
-   std::cout << "-------------------------------";
+   printStopBar(__FILE__);
    return 0;
 }

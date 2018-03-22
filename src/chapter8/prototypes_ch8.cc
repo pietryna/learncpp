@@ -1,6 +1,9 @@
-#include "prototypes_ch8.h"
-
 #include <iostream>
+
+#include <cstring>
+
+#include "../startStop.h"
+#include "prototypes_ch8.h"
 
 
 class IntPair {
@@ -25,10 +28,10 @@ void IntPair::print(void)
    std::cout << "m_A = " << m_A << ", m_B = " << m_B << std::endl;
 }
 
+
 int main_ch8_prototypes(void)
 {
-   std::cout << std::endl << "-------------------------------" << std::endl
-         << "main 8.2" << std::endl;
+   printStartBar(__FILE__);
 
    IntPair p1;
    p1.set(1,4);
@@ -38,6 +41,6 @@ int main_ch8_prototypes(void)
    p1.print();
    p2.print();
 
-   std::cout << "-------------------------------";
+   printStopBar(__FILE__);
    return 0;
 }

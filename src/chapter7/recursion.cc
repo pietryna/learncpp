@@ -1,8 +1,10 @@
 #include <iostream>
 
 #include <cstdlib>
+#include <cstring>
 #include <time.h>
 
+#include "../startStop.h"
 #include "recursion.h"
 
 using std::cout;
@@ -40,10 +42,10 @@ void intToBin(int N)
    cout << uN%2;
 }
 
+
 int main_recursion()
 {
-   std::cout << std::endl << "-------------------------------" << std::endl
-            << "main recursion" << std::endl;
+   printStartBar(__FILE__);
 
    srand(static_cast<unsigned int>(time(0)));
    rand();
@@ -78,6 +80,6 @@ int main_recursion()
    intToBin(0);
    cout << endl;
 
-   std::cout << "-------------------------------";
+   printStopBar(__FILE__);
    return 0;
 }
