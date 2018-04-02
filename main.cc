@@ -9,6 +9,7 @@
 #include "src/chapter8/prototypes_ch8.h"
 #include "src/chapter8/accessSpecifiers.h"
 #include "src/chapter8/pointVector/pointVector.h"
+#include "src/chapter8/summary/summary8.h"
 
 using std::cout;
 using std::cin;
@@ -26,7 +27,8 @@ int main()
 //   returnVal = main_summary();
 //   returnVal = main_ch8_prototypes();
 //   returnVal = main_accesSpecifiers();
-   returnVal = main_pointVector();
+//   returnVal = main_pointVector();
+   returnVal = main_summary8();
 
    printStopBar(__FILE__);
    return returnVal;

@@ -29,5 +29,5 @@ void printStopBar(const char* filename)
 
    stopBar.erase(5, strlen(end.c_str()));
    stopBar.insert(5, end);
-   std::cout << stopBar << std::endl << std::endl;
+   std::cout << stopBar << std::endl;
 }
